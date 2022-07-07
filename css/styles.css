@@ -169,6 +169,7 @@ padding-bottom: 25px;
   color: #FFFFFF;
   border-color:var(--color-acsent);
   background-color: var(--color-acsent);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   
 } 
 .button:focus
@@ -176,6 +177,7 @@ padding-bottom: 25px;
   color: #FFFFFF;
   background-color:var(--color-acsent);
   background-color: var(--color-acsent);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 
 } 
 
@@ -330,6 +332,7 @@ font-size:  0;
   margin-right: 30px;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: var(--color-fon);
 
   }
   .blok-comanda:nth-child(4) {
@@ -362,13 +365,24 @@ padding-bottom: 10px;
   margin-bottom: 0;
   padding-bottom: 16px;
   }
+
   .comanda-icon {
-    display:flex;
-    fill: var(--color-icon);
-    justify-content: center;
-    align-items: center;
+    
+     display: flex;    
+     justify-content:space-evenly; 
+     
     }
     
+    .comanda-icon-but {  
+      display: block;
+      width: 44px;
+      height: 44px;  
+      text-align: center;
+      padding-top: 25%;  
+      justify-content: center;
+      fill: var(--color-icon);          
+     }
+  
    .comanda-icon-but:hover
     {   
     fill:#FFFFFF;
@@ -376,24 +390,13 @@ padding-bottom: 10px;
     background-color:var(--color-acsent);
    }
    .comanda-icon-but:focus
-   {   
-   fill:#FFFFFF;
+   {  
+    fill:#FFFFFF;
    border-radius:  50%;
    background-color:var(--color-acsent);
   }
-   .comanda-icon-but {
-    fill: var(--color-icon);
-    width: 44px;
-    height: 44px;
-    padding: 12px;    
-    border: none;
-   }
-   .comanda-icon-link{
-    margin-right: 10px;
-   }
-  .comanda-icon-link:nth-child(4) {
-    margin-right: 0;
-  }
+   
+   
  
   /* стилизация раздела постоянные клиенты */
   .clients-about {
@@ -520,15 +523,20 @@ padding-bottom: 10px;
 
      .footer-icon {
       display: flex;
-      justify-content: center;
-      align-items: center;
-        
+      justify-content:space-evenly;
+             
      }
      .footer-icon-but {
+      display: block;
+       text-align: center;
+       padding-top: 25%;
+
       width: 44px;
       height: 44px;
+
       border-radius: 50%;
-      padding: 12px;
+      
+     
       background-color: rgba(255, 255, 255, 0.1);
       cursor: pointer;
       fill: #FFFFFF;
